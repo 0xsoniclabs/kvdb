@@ -8,7 +8,7 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/opt"
 
 	"github.com/0xsoniclabs/kvdb"
-	"github.com/Fantom-foundation/lachesis-base/utils/piecefunc"
+	"github.com/0xsoniclabs/kvdb/piecefunc"
 )
 
 // Database is a persistent key-value store. Apart from basic data storage

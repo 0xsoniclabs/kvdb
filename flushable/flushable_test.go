@@ -16,9 +16,9 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/opt"
 
 	"github.com/0xsoniclabs/kvdb"
+	"github.com/0xsoniclabs/kvdb/common/bigendian"
 	"github.com/0xsoniclabs/kvdb/leveldb"
 	"github.com/0xsoniclabs/kvdb/table"
-	"github.com/Fantom-foundation/lachesis-base/common/bigendian"
 )
 
 func TestFlushable(t *testing.T) {

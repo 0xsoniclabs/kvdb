@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/0xsoniclabs/kvdb"
+	"github.com/0xsoniclabs/kvdb/fmtfilter"
 	"github.com/0xsoniclabs/kvdb/table"
-	"github.com/Fantom-foundation/lachesis-base/utils/fmtfilter"
 )
 
 type Producer struct {
