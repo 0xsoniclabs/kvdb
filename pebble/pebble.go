@@ -7,7 +7,7 @@ import (
 	"github.com/cockroachdb/pebble"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
+	"github.com/0xsoniclabs/kvdb"
 	"github.com/Fantom-foundation/lachesis-base/utils/piecefunc"
 )
 

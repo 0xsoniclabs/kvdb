@@ -15,10 +15,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 
+	"github.com/0xsoniclabs/kvdb"
+	"github.com/0xsoniclabs/kvdb/leveldb"
+	"github.com/0xsoniclabs/kvdb/table"
 	"github.com/Fantom-foundation/lachesis-base/common/bigendian"
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/leveldb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/table"
 )
 
 func TestFlushable(t *testing.T) {

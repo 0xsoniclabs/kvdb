@@ -10,10 +10,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
+	"github.com/0xsoniclabs/kvdb"
+	"github.com/0xsoniclabs/kvdb/leveldb"
+	"github.com/0xsoniclabs/kvdb/table"
 	"github.com/Fantom-foundation/lachesis-base/common/bigendian"
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/leveldb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/table"
 )
 
 func TestFlushableParallel(t *testing.T) {
