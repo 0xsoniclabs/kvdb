@@ -3,7 +3,6 @@ module github.com/0xsoniclabs/kvdb
 go 1.23.3
 
 require (
-	github.com/Fantom-foundation/lachesis-base v0.0.0-20230222093424-81884efc3c41
 	github.com/cockroachdb/pebble v1.1.4
 	github.com/emirpasic/gods v1.18.1
 	github.com/ethereum/go-ethereum v1.14.8
