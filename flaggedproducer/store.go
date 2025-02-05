@@ -3,8 +3,8 @@ package flaggedproducer
 import (
 	"sync/atomic"
 
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/flushable"
+	"github.com/0xsoniclabs/kvdb"
+	"github.com/0xsoniclabs/kvdb/flushable"
 )
 
 type flaggedStore struct {

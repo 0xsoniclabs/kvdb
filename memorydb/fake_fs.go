@@ -1,11 +1,11 @@
 package memorydb
 
 import (
-	"math/rand"
+	"crypto/rand"
+	"encoding/hex"
 	"sync"
 
-	"github.com/Fantom-foundation/lachesis-base/hash"
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
+	"github.com/0xsoniclabs/kvdb"
 )
 
 type fakeFS struct {
@@ -41,7 +41,13 @@ func newFakeFS(namespace string) *fakeFS {
 }
 
 func uniqNamespace() string {
-	return hash.FakeHash(rand.Int63()).Hex() // nolint:gosec
+	const length = 32
+	var b [length]byte
+	_, err := rand.Read(b[:]) // Fill the array with random bytes
+	if err != nil {
+		panic(err)
+	}
+	return hex.EncodeToString(b[:])
 }
 
 func (fs *fakeFS) ListFakeDBs() []string {
