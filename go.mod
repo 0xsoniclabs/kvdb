@@ -2,6 +2,8 @@ module github.com/0xsoniclabs/kvdb
 
 go 1.22.0
 
+toolchain go1.23.4
+
 require (
 	github.com/cockroachdb/pebble v1.1.4
 	github.com/emirpasic/gods v1.18.1
